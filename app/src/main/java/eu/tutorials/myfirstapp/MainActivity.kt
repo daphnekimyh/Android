@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         var timesClicked = 0
         btnClickMe.setOnClickListener {
             timesClicked += 1
+            
             tvMyTextView.text = timesClicked.toString()
             Toast.makeText(this, "Hey I'm a toast!", Toast.LENGTH_LONG).show()
         }
